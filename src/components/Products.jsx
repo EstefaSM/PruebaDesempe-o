@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../App.css';
 
 function Products(props){
     return(
@@ -6,10 +7,10 @@ function Products(props){
             <div className='product'>
                 <ol>
                     {/* <li><img src={imgOne} alt="" /></li> */}
-                    <li>Nombre: {props.name}</li>
-                    <li>Categoría: {props.category}</li>
-                    <li>Unidades: {props.unids}</li>
-                    <li>Precio: {props.price}</li>
+                    <li><strong>Nombre:</strong> {props.name}</li>
+                    <li><strong>Categoría:</strong> {props.category}</li>
+                    <li><strong>Unidades:</strong> {props.unids}</li>
+                    <li><strong>Precio:</strong> {props.price}</li>
                 </ol>
             </div>
         </div>
